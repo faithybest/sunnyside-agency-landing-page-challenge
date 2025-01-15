@@ -1,0 +1,1598 @@
+:root{
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan : hsl(167, 40%, 24%);
+    --dark-blue-photography-text: hsl(198, 62%, 26%);
+    --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --barlow-font-family: "Barlow Condensed", sans-serif;
+    --light-font-weight: 300;
+    --semibold-font-weight: 600;
+    --barlow-font-normal: normal;
+    --barlow-font-italic: italic;
+    --normal-weights: 700;
+    --bold-weight: 900;
+}
+
+*, *::before, ::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/*body session*/
+
+body{
+    font-family: var(--barlow-font-family);
+    margin: unset;
+    -webkit-text-size-adjust: none;
+    font-size-adjust: none;
+    font-size: 2rem; 
+}
+.mobile{
+    display: none;
+}
+
+/* HEADER SECTION */
+
+.header{
+   background: url('../images/desktop/image-header.jpg');
+   height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   /* height: 75px;*/
+    max-width: 220vw;
+    margin: 0 45px 0 20px;
+    height: 15vh;    
+}
+.left-nav-header{
+    padding-right:50px;
+}
+
+.left-nav-header .logo-icon{
+   
+}
+.left-nav-header .logo-icon:hover{
+    opacity: 0.8;
+
+}
+.right-nav-header{
+    flex: 1;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-nav-header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;  
+}
+
+.right-nav-header ul li{
+    padding: 5px;
+    margin: 5px;
+}
+
+.right-nav-header ul li a{
+    text-decoration: none;
+    font-family: var(--barlow-font-family);
+    font-style: var(--barlow-font-normal);
+    color: var(--white);  
+    line-height: 0.15rem;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+}
+.right-nav-header ul li:hover{
+    box-shadow: 5px 5px 5px rgba(4, 238, 255, 0.15);
+    opacity: 0.5;
+    transition: box-shadow 0.15s ease-in-out, opacity 1s;
+}
+.right-nav-header .contact a{
+    font-family: "Barlow Condensed", system-ui;
+    font-weight:700;
+    font-style: normal;
+    text-decoration: none;
+    text-transform:uppercase ;
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);  
+    line-height: 0.15rem;
+    font-size: 1.05rem;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    height: 25px;
+    border-radius: 20px; 
+}
+.right-nav-header .contact:hover{
+    opacity: 0.5;
+    transition: opacity 0.05s ease-in-out ;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* CREATIVE SECTION */
+
+.creative-background-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.creative-background-image h1{
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: "Fraunces", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+    padding: 40PX 0 70PX 0;
+}
+.creative-header-arrow{
+    width: 30px;
+    height: 100px;
+    /* margin-top: 110PX; */
+    
+}
+.creative-header-arrow-image{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* MAIN SECTION */
+
+.first-main-section{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr)  minmax(0, 1fr);
+    min-width: 100%;
+    
+}
+
+.transform-brand, .standout-brand, .graphic, .photography{
+    width: 100%;
+    height:auto;
+    /*height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-transform-brand, .image-standout-brand, .image-graphic-design, .image-photography-design{
+    width:100%;
+    height:100%;
+}
+
+.image-transform-brand img, .image-standout-brand img, .image-graphic-design img, .image-photography-design img{
+    width: 100%;
+    height: 100%;
+}
+.image-transform-brand{
+    background-color:hsl(50 97 50);
+}
+.transform-brand h2{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    font-weight: 700;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    line-height: 0.9em;
+    padding: 15px 0 40px 0;  
+}
+
+.transform-brand h3, .standout-brand h3{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 0.5em;
+    margin: 60px 0 0 0;  
+}
+.underline, .underlineYellow, .underlinePink {
+    position: relative;
+    display: inline-block;
+}
+.underline::after{
+    content:""; /* Required for pseudo-elements */
+    display: block; /* Make it a block element */
+    position: absolute; /* Position it relative to the text */
+    width: 28%; /* Full width of the text */
+   /* height: 0.1px;  Height of the underline */
+     /* Color of the underline */
+    /*padding: 2px;*/
+    /*left: -15px; /* Align to the left */
+   /* top: -10px; /* Position it slightly below the text */
+}
+.underlineYellow::after{
+    padding: 2px;
+    box-shadow: 20px 25px 5px hsl(51 100% 49%);
+    left: -22px; /* Align to the left */
+    top: -10px; /* Position it slightly below the text */
+}
+.underlinePink::after{
+    padding: 2px;
+    box-shadow: 20px 25px 5px hsl(8 96% 69%);
+    left: -22PX; /* Align to the left */
+    top: -10px; /* Position it slightly below the tex3qt */
+}
+    
+.transform-brand p{
+    font-family: "Barlow Condensed", system-ui;
+    width: 85%;
+    margin: 0 auto;
+    color: hsl(232, 10%, 55%);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.4em;
+}
+.image-standout-brand{
+    background-color:hsl(8 96 69);
+    }
+.standout-brand h2{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    font-weight: 700;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    line-height: 0.9em;
+    padding: 15px 0 40px 0;
+}
+.standout-brand p{
+    font-family: "Barlow Condensed", system-ui;
+    width: 85%;
+    margin: 0 auto;
+    color: hsl(232, 10%, 55%);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.4em;
+}
+
+.transform-brand a, .standout-brand a{
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+}
+ .photography{
+    background-color: hsl(197 100 68);
+    position: relative;
+}
+
+.graphic{
+    background-color: hsl( 165 44 73);
+    position: relative;   
+}
+
+.photography-design, .graphic-design{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;   
+     position: absolute;
+     bottom: 30px;
+ }
+ 
+.photography-design h2{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 0.9em;
+    
+}
+.photography-design p{
+    font-family: "Barlow Condensed", system-ui;
+    width: 70%;
+    margin: 0 auto;
+    color: hsl(232, 10%, 55%);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    font-weight: 400;
+    text-align: center;
+    /*word-spacing:0.001em;
+    letter-spacing:0.02em;*/
+    margin: 30px 0 30px 0;
+}
+
+.graphic-design h2{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 0.9em;
+    text-transform: capitalize;
+    
+}
+
+.graphic-design p{
+    font-family: "Barlow Condensed", system-ui;
+    width: 70%;
+    margin: 0 auto;
+    color: hsl(232, 10%, 55%);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    text-align: center;
+    /*word-spacing:0.001em;
+    letter-spacing:0.02em;*/
+    margin: 30px 0 30px 0;  
+} 
+
+/* testimonials-section */
+
+.testimonials-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-section h2{
+    font-family:"Fraunces", system-ui;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 2em;
+    word-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 65px 0 65px 0;
+    color:hsl(232 10% 55%); 
+}
+.individual-report{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+     /* min-height:70vh;   */
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 15px;  
+    padding: 0 5px 10px 5px; 
+}
+.emily-report, .thomas-report, .jennie-report{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emily-report img, .thomas-report img, .jennie-report img{
+    width: 100%;
+    height: 50%;
+    border-radius: 100%;
+}
+.individual-report p{
+    font-family: "Barlow Condensed", system-ui;
+    color: hsl(232, 10%, 55%);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 20px 0 30px 0;
+    line-height: 1.3em;
+   /* word-spacing:0.001em;
+    letter-spacing:0.009em;
+    margin: 30px 0 30px 0;*/
+}
+.report{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+}  
+
+.testimonials-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 60px 0;
+}
+
+.testimonials-info h3{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    line-height: 0.9em;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(165, 155, 155, 0.15);
+    color:hsl(216, 56%, 2%); 
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.testimonials-info p{
+    font-family: "Barlow Condensed", system-ui;
+    color: hsl(232, 10%, 55%);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 0.7em;
+    opacity: 0.4;
+}
+
+/* product-section */
+
+.product-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+}
+.product-section div{
+    width:100%;
+    height: 100%;
+}
+.product-section img{
+    width: 100%;
+    height: 100%;
+}
+
+/* footer-section */
+
+footer{
+    height: 50vh;
+    background-color: hsl( 165 44 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .footer-logo{
+   margin-top: 70px;
+
+}
+
+ul.nav-footer{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+ul.nav-footer li{
+    list-style: none;
+    margin:10px;
+
+}
+
+footer .nav-footer li a{
+    text-decoration: none;
+    font-family: "Barlow Condensed", system-ui;
+    color: hsl(168, 34%, 41%);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 0.9em;
+    word-spacing:0.001em;
+    letter-spacing:0.009em;
+    padding: 10px;
+    text-align: center;
+}
+footer .footer-icon{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    /* width: 30%;
+    margin: 0 auto; */
+}
+ul.footer-icon li{
+    list-style: none;
+    margin: 10px;
+}
+
+footer .footer-icon li a{
+    text-decoration: none;
+    font-size: 34px;
+    color: white;
+    text-decoration: none;
+    font-family: "Barlow Condensed", system-ui;
+    color: hsl(168, 34%, 41%);
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 0.9em;
+    word-spacing:0.001em;
+    letter-spacing:0.009em;
+    padding: 10px;
+    text-align: center;
+}
+ul.footer-icon li:hover, ul.nav-footer li:hover{
+    box-shadow: 5px 5px 5px rgba(169, 175, 175, 0.15);
+    opacity: 0.5;
+    transition: box-shadow 0.15s ease-in-out, opacity 1s;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    height: 10vh;
+    margin:20px 0 0 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media(max-width:1067px){
+.underline::after{
+    content:""; /* Required for pseudo-elements */
+    display: block; /* Make it a block element */
+    position: absolute; /* Position it relative to the text */
+    width: 35%; /* Full width of the text */
+   /* height: 0.1px;  Height of the underline */
+     /* Color of the underline */
+    /*padding: 2px;*/
+    /*left: -15px; /* Align to the left */
+   /* top: -10px; /* Position it slightly below the text */
+}
+}
+
+@media(max-width:1030px){
+    .creative-background-image h1{
+        padding: 20PX 0 60PX 0;
+    }
+}
+@media(max-width:1010px){
+    .underline::after{
+        content:""; /* Required for pseudo-elements */
+        display: block; /* Make it a block element */
+        position: absolute; /* Position it relative to the text */
+        width: 37%; /* Full width of the text */
+       /* height: 0.1px;  Height of the underline */
+         /* Color of the underline */
+        /*padding: 2px;*/
+        /*left: -15px; /* Align to the left */
+       /* top: -10px; /* Position it slightly below the text */
+    }
+    
+    .photography-design, .graphic-design{
+        bottom: 25px;
+    }
+    
+   .photography-design h2, .graphic-design h2{
+       font-weight: 700;
+       font-size: 2rem;
+       line-height: 0.9em;
+       
+   }
+   .photography-design p, .graphic-design p{
+       width: 80%;
+       margin: 0 auto;
+       font-size: 1.5rem;
+       line-height: 1.3em;
+       font-weight: 500;
+       text-align: center;
+       margin: 20px 0 20px 0;
+   }
+}
+
+@media(max-width:919px){
+    .underline::after{
+        content:""; /* Required for pseudo-elements */
+        display: block; /* Make it a block element */
+        position: absolute; /* Position it relative to the text */
+        width: 41%; /* Full width of the text */
+       /* height: 0.1px;  Height of the underline */
+         /* Color of the underline */
+        /*padding: 2px;*/
+        /*left: -15px; /* Align to the left */
+       /* top: -10px; /* Position it slightly below the text */
+    }
+    .photography-design{
+        bottom: 20px;
+    }
+    .graphic-design{
+        bottom: 0px;
+    }
+   .photography-design h2, .graphic-design h2{
+       font-weight: 700;
+       font-size: 1.8rem;
+       line-height: 0.3em;
+   }
+   .photography-design p , .graphic-design p{
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    margin: 10px 0 10px 0;
+}
+
+}
+@media(max-width:862px){
+    .transform-brand h2, .standout-brand h2{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    font-weight: 700;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 2.1rem;
+    line-height: 0.9em;
+    padding: 15px 0 40px 0; 
+    }
+    .transform-brand h3, .standout-brand h3{
+    font-family:"Fraunces", system-ui; 
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 0.4em;
+    margin: 40px 0 0 0;  
+}
+.transform-brand p, .standout-brand p{
+    font-family: "Barlow Condensed", system-ui;
+    width: 85%;
+    margin: 0 auto;
+    color: hsl(232, 10%, 55%);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 1.3em;
+}
+
+    .photography-design{
+        bottom: 20px;
+    }
+    .graphic-design{
+        bottom: 0px;
+    }
+   .photography-design h2, .graphic-design h2{
+       font-weight: 700;
+       font-size: 2rem;
+       line-height: 0.5em;
+   }
+   .photography-design p, .graphic-design p{
+       width: 90%;
+       margin: 0 auto;
+       font-size: 1.4rem;
+       line-height: 1.3em;
+       margin: 10px 0 10px 0;
+   }
+
+   .individual-report{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+    .testimonials-info{
+        padding: 10px 0 60px 0;
+    }
+
+}
+@media(max-width:797px){
+    .creative-background-image h1{
+        padding: 15PX 0 40PX 0;
+    }
+    .transform-brand h2, .standout-brand h2{
+        font-family:"Fraunces", system-ui; 
+        font-style: normal;
+        font-weight: 700;
+        width: 85%;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 0.9em;
+        padding: 15px 0 30px 0; 
+        }
+        .transform-brand p, .standout-brand p{
+            font-weight: 500;
+            font-style: normal;
+            font-size: 1.3rem;
+            line-height: 1.3em;
+        }
+    .transform-brand h3, .standout-brand h3{
+        font-size: 1.1rem;
+        line-height: 0.1em;
+        margin: 20px 0 0 0;  
+    }
+    .photography-design{
+        bottom: 20px;
+    }
+    .graphic-design{
+        bottom: 0px;
+    }
+   .photography-design h2, .graphic-design h2{
+       font-weight: 700;
+       font-size: 2rem;
+       line-height: 0.5em;
+   }
+   .photography-design p, .graphic-design p{
+       width: 90%;
+       margin: 0 auto;
+       font-size: 1.2rem;
+       line-height: 1.2em;
+       margin: 10px 0 10px 0;
+   }
+   
+}
+
+@media(max-width:735px){
+    .standout-brand h2{
+        font-size: 2.3rem;
+        line-height: 0.9em;
+        padding: 15px 0 40px 0;
+    }
+    .standout-brand p{
+        font-size: 1.1rem;
+        line-height: 1.5em;
+    }
+
+}
+
+@media(max-width:719px){
+
+     .header{
+        height: 80vh;
+    
+    }
+    
+    .creative-background-image h1{
+    font-size: 2.5rem;
+    }
+    
+    
+    .transform-brand h3, .standout-brand h3{
+        font-size: 1rem;
+        line-height: 0.2em;
+        margin: 17px 0 0 0;  
+    }
+        
+    .transform-brand p, .standout-brand p{
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+    .photography-design{
+        bottom: 10px;
+    }
+    .graphic-design{
+        bottom: 5px;
+    }
+   .photography-design h2, .graphic-design h2{
+       font-weight: 700;
+       font-size: 2rem;
+       line-height: 0.2em;
+       
+   }
+   .photography-design p, .graphic-design p{
+       width: 90%;
+       margin: 0 auto;
+       font-size: 1rem;
+       line-height: 1.5em;
+       margin: 20px 0 20px 0;
+   }
+}
+
+@media(max-width:611px){
+
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    } 
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    } 
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-info{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: fixed;
+        left: -90%; 
+        top: 100px;
+        gap: 0;
+        transform: 0.3s;
+    }
+    .right-nav-header ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    height: 8em;
+    width: 70%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    padding-left: 0;
+}
+    .right-nav-header ul li a{
+    font-style: normal;
+    color: var(--very-dark-grayish-blue);  
+    line-height: 0.1rem;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+   
+.right-nav-header ul li:hover{
+    box-shadow: 5px 5px 5px rgba(4, 238, 255, 0.15);
+    opacity: 0.5;
+    transition: box-shadow 0.15s ease-in-out, opacity 1s;
+}
+
+.right-nav-header .contact a{
+    background-color:hsl(50 97 50);
+    color:hsl(212, 27%, 19%) ;  
+    line-height: 0.15rem;
+    font-size: 1.05rem;
+    border: none;
+    padding: 20px 30px 20px 30px;
+    height: 30px;
+    border-radius: 30px; 
+}
+.right-nav-header .contact:hover{
+    opacity: 0.5;
+    transition: opacity 0.05s ease-in-out ;
+}
+
+
+    .right-nav-header.active, .nav-info.active{
+        left: 35px;
+        right: 35px;
+    }
+    .transform-brand h2, .standout-brand h2{
+        font-size: 2rem;
+        padding: 0 0 20px 0;
+    }
+    
+    .transform-brand h3, .standout-brand h3{
+        font-size: 1rem;
+        line-height: 0.2em;
+        margin: 17px 0 0 0;  
+    }
+
+    .transform-brand p, .standout-brand p{
+        font-size: 1rem;
+        line-height: 1.1em;
+    }
+    .photography-design{
+        bottom: 5px;
+    }
+    .graphic-design{
+        bottom: 3px;
+    }
+   .photography-design h2, .graphic-design h2{
+       font-weight: 700;
+       font-size: 1.8rem;
+       line-height: 0em;
+       
+   }
+   .photography-design p, .graphic-design p{
+       width: 90%;
+       margin: 0 auto;
+       font-size: 1rem;
+       line-height: 1.1em;
+       margin: 18px 0 18px 0;
+   }
+}
+
+
+@media(max-width:591px){
+
+    .creative-background-image h1{
+        font-size: 2.6rem; 
+    }
+    .transform-brand h2, .standout-brand h2, .photography-design h2{
+        font-size: 1.3rem;
+        padding: 3px 0 10px 0;
+    }
+
+    .graphic-design h2{
+        font-size: 1.3rem;
+    }
+    
+    .transform-brand h3, .standout-brand h3{
+        font-size: 0.7rem;
+        line-height: 0.1em;
+        margin: 14px 0 0 0;  
+    }
+
+    .transform-brand p, .standout-brand p{
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+
+    .testimonials-section h2{
+        font-size: 2.7rem;
+        line-height: 2em;
+        word-spacing: 0.5em;
+        padding: 50px 10px 50px 10px;
+        color:hsl(232 10% 55%); 
+    }
+}
+
+@media(max-width:579px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .header{
+        background: url('../images/mobile/image-header.jpg');
+        height: 120vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     .creative-background-image h1{
+        font-size: 2.5rem;
+        padding: 85px 10px 100px 10px;
+    }
+    .creative-header-arrow{
+        width: 30px;
+        height: 120px;
+    }
+    .creative-header-arrow-image{
+        width: 100%;
+        height: 100%;
+
+    }
+    .first-main-section{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        min-width: 100%;
+        
+    }
+    
+    .transform-brand, .standout-brand{
+        width: 100%;
+        height:650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .graphic, .photography{
+
+    }
+     .image-transform-brand, .image-standout-brand/*, .image-graphic-design, .image-photography-design */{
+        width:100%;
+        height:100%;
+    }
+    
+    .image-transform-brand img, .image-standout-brand img, .image-graphic-design img, .image-photography-design img{
+        width: 100%;
+        height: 100%;
+    }
+    .image-transform-brand{
+        background-color:hsl(50 97 50);
+    }
+    h2.text-transform-brand, h2.text-standout-brand, .photography-design h2, .graphic-design h2{
+        font-weight: 700; 
+        font-size: 3rem;
+        line-height: 1.1em;
+        padding: 15px 0 40px 0; 
+        width: 85%;
+        margin: 0 auto;
+        /* padding: 0 0 40px 0; */
+        text-align: center;
+    }
+    .photography-design h2{
+        color: hsl(197, 78%, 9%); 
+    } 
+    .graphic-design h2{
+        color:hsl(165, 74%, 9%) ;
+    }
+
+
+    .transform-brand h3, .standout-brand h3{
+        font-weight: 900;
+        width: 85%;
+        margin: 0 auto;
+        font-size: 1.9rem;
+        line-height: 1em;
+        margin:  0;  
+    }
+    .underline, .underlineYellow, .underlinePink {
+        position: relative;
+        display: inline-block;
+    }
+    .underline::after{
+        content:""; /* Required for pseudo-elements */
+        display: block; /* Make it a block element */
+        position: absolute; /* Position it relative to the text */
+        width: 47%; /* Full width of the text */
+       /* height: 0.1px;  Height of the underline */
+         /* Color of the underline */
+        /*padding: 2px;*/
+        left: 112px; /* Align to the left */
+        top: 0px; /* Position it slightly below the text */
+    }
+    .underlineYellow::after{
+        box-shadow: 20px 25px 5px hsl(51 100% 49%);
+    }
+    .underlinePink::after{
+        box-shadow: 20px 25px 5px hsl(8 96% 69%);
+    }
+        
+    .transform-brand p, .standout-brand p, .photography-design p, .graphic-design p, .individual-report p{
+        width: 85%;
+        margin: 0 auto;
+        color: hsl(232, 10%, 55%);
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        line-height: 2em;
+        padding:0 0 70px 0 ;
+        
+    }
+    .photography-design p{
+        color: hsl(197, 60%, 27%);
+        width: 85%;
+        margin: 0 auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        line-height: 2em;
+        /* padding:0 0 70px 0 ; */
+    }
+    .graphic-design p{
+        color: hsl(165, 65%, 22%);
+        width: 85%;
+        margin: 0 auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        line-height: 2em;
+        /* padding:0 0 70px 0 ; */
+    }
+
+     .photography{
+        background-color: hsl(197 100 68);
+        position: relative;
+    }
+    
+    .graphic{
+        background-color: hsl( 165 44 73);
+        position: relative;   
+    }
+    
+    .photography-design, .graphic-design{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;   
+         position: absolute;
+         bottom: 30px;
+     }
+     
+    .testimonials-section h2{
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 1em;
+        letter-spacing: 0.02em;
+        padding: 80px 0 70px 0;
+    
+    }
+   
+    .individual-report{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height:60%; 
+        padding: 0px 5px 10px 5px;
+    }
+
+    .emily-report img, .thomas-report img, .jennie-report img{
+        width: 100%;
+        height: 80%;
+        border-radius: 100%;
+    }
+    
+    .report{
+        font-family: "Barlow Condensed", system-ui;
+        color: hsl(232, 10%, 55%);
+        width: 85%;
+        margin: 0 auto; 
+        text-align: center;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        padding: 20px 0 30px 0;
+        line-height: 2em;
+        
+    } 
+    
+    .testimonials-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        padding: 0 0 45px 0;
+    }
+    
+    .testimonials-info p{
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1em;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        width: 100%;
+    }
+    .testimonials-info h3{
+        line-height: 0.9em;
+        padding: 10px;
+        margin: 0 0 20px 0;
+        box-shadow: 5px 5px 5px rgba(165, 155, 155, 0.15);
+        font-size: 1.5rem;
+    }
+    
+    /* PRODUCT SECTION */
+
+    .product-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        min-height: 100vh;
+        row-gap: 0;
+        column-gap: 0;
+    }
+    .product-section div{
+        max-width:100%;
+        height: 50vh;
+    }
+    .product-section img{
+        max-width: 100%;
+        height: 50vh;
+    }
+
+    /* FOOTER */
+
+    footer{
+        height: 50vh;
+    }
+    footer .footer-logo{
+       margin-top: 70px;
+    }
+    
+    ul.nav-footer{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        width: 60%;
+        margin: 0 auto;
+    }
+    ul.nav-footer li{
+        list-style: none;
+    }
+    
+    footer .nav-footer li a{
+        font-weight: 600; 
+         font-size: 1.8rem;
+        
+    }
+    footer .footer-icon{
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+    ul.footer-icon li{
+        list-style: none;
+    }
+    
+    footer .footer-icon li a{
+        font-weight: 600;
+        
+    }
+    ul.footer-icon li:hover, ul.nav-footer li:hover{
+        box-shadow: 5px 5px 5px rgba(169, 175, 175, 0.15);
+        opacity: 0.5;
+        transition: box-shadow 0.15s ease-in-out, opacity 1s;
+    }
+     .attribution {
+        font-size: 13px;
+        text-align: center; 
+        height: 10vh;
+        margin:25px 0 0 0;
+    }
+   
+}
+@media(max-width:567px){
+   
+    .creative-background-image h1{
+        
+        font-size: 4rem;
+        text-align: center;
+        padding: 40PX 0 70PX 0;
+    }
+   
+    .underline, .underlineYellow, .underlinePink {
+        position: relative;
+        display: inline-block;
+    }
+    .underline::after{
+        content:""; /* Required for pseudo-elements */
+        display: block; /* Make it a block element */
+        position: absolute; /* Position it relative to the text */
+        width: 49%; /* Full width of the text */
+       /* height: 0.1px;  Height of the underline */
+         /* Color of the underline */
+        /*padding: 2px;*/
+        left: 102px; /* Align to the left */
+        top: 0px; /* Position it slightly below the text */
+    }
+     
+    .testimonials-section h2{
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 1em;
+        letter-spacing: 0.02em;
+        padding: 80px 0 70px 0;
+    
+    }
+}
+
+    @media(max-width:567px){
+        .underline, .underlineYellow, .underlinePink {
+            position: relative;
+            display: inline-block;
+        }
+        .underline::after{
+            content:""; /* Required for pseudo-elements */
+            display: block; /* Make it a block element */
+            position: absolute; /* Position it relative to the text */
+            width: 49%; /* Full width of the text */
+           /* height: 0.1px;  Height of the underline */
+             /* Color of the underline */
+            /*padding: 2px;*/
+            left: 103px; /* Align to the left */
+            top: 0px; /* Position it slightly below the text */
+        }
+         .photography-design h2{
+            padding: 5px 0 20px 0; 
+        }
+         .graphic-design h2{
+            padding: 5px 0 20px 0; 
+         }
+    }
+    @media(max-width:513px){
+        .transform-brand p, .standout-brand p, .photography-design p, .graphic-design p, .individual-report p{
+            font-size: 1.8rem;
+            line-height: 1.5em;
+            padding:0 0 70px 0 ;
+            
+        }
+        .underline, .underlineYellow, .underlinePink {
+            position: relative;
+            display: inline-block;
+        }
+        .underline::after{
+            content:""; /* Required for pseudo-elements */
+            display: block; /* Make it a block element */
+            position: absolute; /* Position it relative to the text */
+            width: 54%; /* Full width of the text */
+            left: 83px; /* Align to the left */
+            top: 0px; /* Position it slightly below the text */
+        }
+        h2.text-transform-brand, h2.text-standout-brand, .photography-design h2, .graphic-design h2{
+            font-weight: 700; 
+            font-size: 2.5rem;
+            line-height: 1.1em;
+            padding: 15px 0 40px 0; 
+            width: 85%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+@media(max-width:489px){
+    .underline, .underlineYellow, .underlinePink {
+        position: relative;
+        display: inline-block;
+    }
+    .underline::after{
+        content:""; /* Required for pseudo-elements */
+        display: block; /* Make it a block element */
+        position: absolute; /* Position it relative to the text */
+        width: 56%; /* Full width of the text */
+        left: 75px; /* Align to the left */
+        top: 0px; /* Position it slightly below the text */
+    }
+
+    /* FOOTER SECTION */
+    footer{
+        height: 45vh;
+        background-color: hsl( 165 44 73);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer .footer-logo{
+       margin-top: 10px;
+       padding-bottom:20px ;
+    
+    }
+    
+    ul.nav-footer{
+        padding: 0px;
+    }
+    ul.nav-footer li{
+        list-style: none;
+        margin:5px;
+    
+    }
+    
+    footer .nav-footer li a{
+        padding: 10px;
+    }
+    footer .footer-icon{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        text-decoration: none;
+    }
+    ul.footer-icon{
+        padding: 0;
+    }
+    ul.footer-icon li{
+        list-style: none;
+        margin: 0px;
+    }
+    
+    footer .footer-icon li a{
+        font-size: 1.5rem; 
+        line-height: 0em;
+        word-spacing:0em;
+        letter-spacing:0em;
+        padding: 0px;
+        text-align: center;
+    }
+    ul.footer-icon li:hover, ul.nav-footer li:hover{
+        box-shadow: 5px 5px 5px rgba(169, 175, 175, 0.15);
+        opacity: 0.5;
+        transition: box-shadow 0.15s ease-in-out, opacity 1s;
+    }
+
+}
+
+@media(max-width:449px){
+    .underline, .underlineYellow, .underlinePink {
+        position: relative;
+        display: inline-block;
+    }
+    .underline::after{
+        content:""; /* Required for pseudo-elements */
+        display: block; /* Make it a block element */
+        position: absolute; /* Position it relative to the text */
+        width: 62%; /* Full width of the text */
+       /* height: 0.1px;  Height of the underline */
+         /* Color of the underline */
+        /*padding: 2px;*/
+        left: 53px; /* Align to the left */
+        top: 0px; /* Position it slightly below the text */
+    }
+    .creative-background-image h1{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 40PX 0 70PX 0;
+    }
+    .transform-brand p, .standout-brand p, .photography-design p, .graphic-design p, .individual-report p{
+        font-size: 1.4rem;
+        line-height: 1.3em;
+        padding:0 0 70px 0 ;
+            
+    }
+    h2.text-transform-brand, h2.text-standout-brand, .photography-design h2, .graphic-design h2{
+        font-weight: 700; 
+        font-size: 2.5rem;
+        line-height: 1.1em;
+        padding: 0px 0 35px 0; 
+        margin-top: 0;
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        }
+    .transform-brand, .standout-brand{
+    height:500px;       
+    }
+
+    /* footer-section */
+
+footer .footer-logo{
+   margin-top: 10px;
+
+}
+
+ul.nav-footer{
+    padding-bottom: 10px;
+}
+ ul.nav-footer li{
+    list-style: none;
+    margin:0px;
+
+}
+
+footer .nav-footer li a{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.testimonials-section h2{
+        font-weight: 600;
+        font-size: 1.7rem;
+        line-height: 1em;
+        letter-spacing: 0.01em;
+        padding: 80px 0 70px 0;
+    }
+
+   
+}
+
+@media(max-width:397px){
+    .creative-background-image h1{
+        font-size: 2.9rem;
+        text-align: center;
+        padding: 40PX 0 70PX 0;
+        }
+        .underline, .underlineYellow, .underlinePink {
+            position: relative;
+            display: inline-block;
+        }
+        .underline::after{
+            content:""; /* Required for pseudo-elements */
+            display: block; /* Make it a block element */
+            position: absolute; /* Position it relative to the text */
+            width: 69%; /* Full width of the text */
+           /* height: 0.1px;  Height of the underline */
+             /* Color of the underline */
+            /*padding: 2px;*/
+            left: 34px; /* Align to the left */
+            top: 0px; /* Position it slightly below the text */
+        }
+        h2.text-transform-brand, h2.text-standout-brand, .photography-design h2, .graphic-design h2{
+            font-size: 2rem;
+            line-height: 1.2em;
+            padding: 0px 0 35px 0; 
+        }
+        .transform-brand p, .standout-brand p, .photography-design p, .graphic-design p, .individual-report p{
+            font-size: 1.25rem;
+            line-height: 1.3em;
+            padding:0 0 70px 0 ;
+                
+        }
+        .testimonials-section h2{
+            font-size: 1.5rem;
+            line-height: 1em;
+            letter-spacing: 0.001em;
+            padding: 80px 0 70px 0;
+        }
+        .product-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        min-height: 90vh;
+        row-gap: 0;
+        column-gap: 0;
+    }
+    .product-section div{
+        max-width:100%;
+        height: 35vh;
+    }
+    .product-section img{
+        max-width: 100%;
+        height: 50vh;
+    } 
+}
+
+@media(max-width:347px){
+    .creative-background-image h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 40PX 0 70PX 0;
+        }
+        .transform-brand h3, .standout-brand h3{
+        width: 85%;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        line-height: 0.5em;
+        margin: 0 0 0 0;  
+        }
+        .underline::after{
+            content:""; /* Required for pseudo-elements */
+            display: block; /* Make it a block element */
+            position: absolute; /* Position it relative to the text */
+            width: 58%; /* Full width of the text */
+           /* height: 0.1px;  Height of the underline */
+             /* Color of the underline */
+            /*padding: 2px;*/
+            left: 42px; /* Align to the left */
+            top: -10px; /* Position it slightly below the text */
+        }
+        .testimonials-section h2{
+            font-size: 1.3rem;
+            line-height: 1em;
+            letter-spacing: 0.001em;
+            padding: 80px 0 70px 0;
+        }
+        h2.text-transform-brand, h2.text-standout-brand, .photography-design h2, .graphic-design h2{
+            font-size: 2rem;
+            line-height: 1.2em;
+            padding: 0px 0 35px 0; 
+        }
+        .transform-brand p, .standout-brand p, .individual-report p{
+            font-size: 1.25rem;
+            line-height: 1.4em;
+            padding:0 0 70px 0 ;    
+        }
+        .graphic-design p , .photography-design p{
+            padding:0 0 35px 0 ; 
+            font-size: 1.25rem;
+        }
+        .graphic-design h2{
+            padding: 4px 0 20px 0; 
+         }
+         .product-section{
+            display: grid;
+            grid-template-columns: 1fr 1fr;  
+            max-height: 100%;
+            row-gap: 0;
+            column-gap: 0;
+        }
+        .product-section div{
+            max-width:100%;
+            height: 25vh;
+        }
+        .product-section img{
+            max-width:100%;
+            height: 50vh;
+        } 
+        .nav-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 220vw;
+            margin: 0 10px 0 10px;
+            height: 15vh;    
+        }
+
+
+}
