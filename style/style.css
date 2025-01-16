@@ -1414,7 +1414,7 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
     .creative-background-image h1{
     font-size: 3.5rem;
     text-align: center;
-    padding: 40PX 0 70PX 0;
+    padding: 40PX 0 120PX 0;
     }
     .transform-brand p, .standout-brand p, .photography-design p, .graphic-design p, .individual-report p{
         font-size: 1.4rem;
@@ -1591,7 +1591,7 @@ footer .nav-footer li a{
             align-items: center;
             max-width: 220vw;
             margin: 0 10px 0 10px;
-            height: 15vh;    
+            height: 18vh;    
         }
 
 
