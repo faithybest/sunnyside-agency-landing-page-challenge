@@ -1539,18 +1539,18 @@ footer .nav-footer li a{
             content:""; /* Required for pseudo-elements */
             display: block; /* Make it a block element */
             position: absolute; /* Position it relative to the text */
-            width: 58%; /* Full width of the text */
+            width: 60%; /* Full width of the text */
            /* height: 0.1px;  Height of the underline */
              /* Color of the underline */
             /*padding: 2px;*/
-            left: 42px; /* Align to the left */
+            left: 37px; /* Align to the left */
             top: -10px; /* Position it slightly below the text */
         }
         .testimonials-section h2{
             font-size: 1.3rem;
             line-height: 1em;
-            letter-spacing: 0.001em;
-            padding: 80px 0 70px 0;
+            letter-spacing: 0em;
+            padding: 70px 0 60px 0;
         }
         h2.text-transform-brand, h2.text-standout-brand, .photography-design h2, .graphic-design h2{
             font-size: 2rem;
@@ -1560,7 +1560,7 @@ footer .nav-footer li a{
         .transform-brand p, .standout-brand p, .individual-report p{
             font-size: 1.25rem;
             line-height: 1.4em;
-            padding:0 0 70px 0 ;    
+            padding:0 0 40px 0 ;    
         }
         .graphic-design p , .photography-design p{
             padding:0 0 35px 0 ; 
