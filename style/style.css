@@ -1414,7 +1414,7 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
     .creative-background-image h1{
     font-size: 3.5rem;
     text-align: center;
-    padding: 40PX 0 120PX 0;
+    padding: 40PX 0 60PX 0;
     }
     .transform-brand p, .standout-brand p, .photography-design p, .graphic-design p, .individual-report p{
         font-size: 1.4rem;
@@ -1572,9 +1572,9 @@ footer .nav-footer li a{
          .product-section{
             display: grid;
             grid-template-columns: 1fr 1fr;  
-            max-height: 100%;
+            /* max-height: 100%;
             row-gap: 0;
-            column-gap: 0;
+            column-gap: 0; */
         }
         .product-section div{
             max-width:100%;
@@ -1594,7 +1594,27 @@ footer .nav-footer li a{
             height: 18vh;    
         }
 
-
+@media(max-width:330px){
+    .creative-background-image h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 40PX 0 93PX 0;
+    }
+}
+@media(max-width:320px){
+    .creative-background-image h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 40PX 0 83PX 0;
+    }
+}
+@media(max-width:280px){
+    .creative-background-image h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 40PX 0 105PX 0;
+    }
+}
         
 /* CREATIVE SECTION */
 
