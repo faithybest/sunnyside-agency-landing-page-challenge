@@ -478,6 +478,7 @@ body{
 
 /* .image-transform-brand:hover, .image-standout-brand:hover, .product-section div:hover {
     transform: scale(1.1); 
+    
 } */
 
 /* footer-section */
@@ -502,7 +503,7 @@ ul.nav-footer{
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 0px 20px 0;
     text-align: center;
 }
 ul.nav-footer li{
@@ -531,6 +532,7 @@ footer .footer-icon{
     justify-content: space-between;
     text-align: center;
     text-decoration: none;
+    padding: 0;
     /* width: 30%;
     margin: 0 auto; */
 }
@@ -586,9 +588,9 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
 }
 }
 
-@media(max-width:1030px){
+@media(max-width:1032px){
     .creative-background-image h1{
-        padding: 20PX 0 60PX 0;
+        padding: 70PX 0 95PX 0;
     }
 }
 @media(max-width:1010px){
@@ -611,9 +613,9 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
    .photography-design h2, .graphic-design h2{
        font-weight: 700;
        font-size: 2rem;
-       line-height: 0.9em;
-       
+       line-height: 0.9em;  
    }
+
    .photography-design p, .graphic-design p{
        width: 80%;
        margin: 0 auto;
@@ -623,6 +625,12 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
        text-align: center;
        margin: 20px 0 20px 0;
    }
+}
+
+@media(max-width:994px){
+    .creative-background-image h1{
+    padding: 55PX 0 30PX 0;
+    } 
 }
 
 @media(max-width:919px){
@@ -718,7 +726,7 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
 }
 @media(max-width:797px){
     .creative-background-image h1{
-        padding: 15PX 0 40PX 0;
+        padding: 55PX 0 45PX 0;
     }
     .transform-brand h2, .standout-brand h2{
         font-family:"Fraunces", system-ui; 
@@ -763,11 +771,16 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
 }
 
 @media(max-width:735px){
+    .creative-background-image h1{
+        padding: 55PX 0 70PX 0;
+    }
+
     .standout-brand h2{
         font-size: 2.3rem;
         line-height: 0.9em;
         padding: 15px 0 40px 0;
     }
+
     .standout-brand p{
         font-size: 1.1rem;
         line-height: 1.5em;
@@ -784,8 +797,8 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
     
     .creative-background-image h1{
     font-size: 2.5rem;
+    padding: 15PX 0 40PX 0;
     }
-    
     
     .transform-brand h3, .standout-brand h3{
         font-size: 1rem;
@@ -927,6 +940,7 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
    }
    .product-section {
     grid-template-columns: repeat(2, 1fr);
+    height:auto ;
   }
 }
 
@@ -974,7 +988,7 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
     }
     .header{
         background: url('../images/mobile/image-header.jpg');
-        height: 120vh;
+        height: 100vh;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1257,7 +1271,7 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
     .creative-background-image h1{
         font-size: 4rem;
         text-align: center;
-        padding: 40PX 0 70PX 0;
+        padding: 30PX 0 60PX 0;
     }
    
     .underline, .underlineYellow, .underlinePink {
@@ -1272,10 +1286,17 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
        /* height: 0.1px;  Height of the underline */
          /* Color of the underline */
         /*padding: 2px;*/
-        left: 102px; /* Align to the left */
+        left: 103px; /* Align to the left */
         top: 0px; /* Position it slightly below the text */
     }
-     
+
+    .photography-design h2{
+        padding: 5px 0 20px 0; 
+    }
+     .graphic-design h2{
+        padding: 5px 0 20px 0; 
+    }
+
     .testimonials-section h2{
         font-weight: 600;
         font-size: 2rem;
@@ -1286,29 +1307,15 @@ ul.footer-icon li:hover, ul.nav-footer li:hover{
     }
 }
 
-    @media(max-width:567px){
-        .underline, .underlineYellow, .underlinePink {
-            position: relative;
-            display: inline-block;
-        }
-        .underline::after{
-            content:""; /* Required for pseudo-elements */
-            display: block; /* Make it a block element */
-            position: absolute; /* Position it relative to the text */
-            width: 49%; /* Full width of the text */
-           /* height: 0.1px;  Height of the underline */
-             /* Color of the underline */
-            /*padding: 2px;*/
-            left: 103px; /* Align to the left */
-            top: 0px; /* Position it slightly below the text */
-        }
-         .photography-design h2{
-            padding: 5px 0 20px 0; 
-        }
-         .graphic-design h2{
-            padding: 5px 0 20px 0; 
-         }
+@media(max-width:517px){
+
+    .creative-background-image h1{
+        font-size: 4rem;
+        text-align: center;
+        padding: 26PX 0 60PX 0;
     }
+}
+
     @media(max-width:513px){
         .transform-brand p, .standout-brand p, .photography-design p, .graphic-design p, .individual-report p{
             font-size: 1.8rem;
@@ -1522,6 +1529,12 @@ footer .nav-footer li a{
             letter-spacing: 0.001em;
             padding: 80px 0 70px 0;
         }
+        .product-section img {
+            width: 100%;
+            height: auto; /* Important: Set height to 0 */
+            object-fit: cover;
+            display: block; /* Prevents a small gap at the bottom */
+          }
         /* }
         .product-section{
         display: grid;
@@ -1539,7 +1552,19 @@ footer .nav-footer li a{
         height: 50vh;
     }  */
 }
-
+@media(max-width:381px){
+    .underline::after{
+        content:""; /* Required for pseudo-elements */
+        display: block; /* Make it a block element */
+        position: absolute; /* Position it relative to the text */
+        width: 71%; /* Full width of the text */
+       /* height: 0.1px;  Height of the underline */
+         /* Color of the underline */
+        /*padding: 2px;*/
+        left: 28px; /* Align to the left */
+        top: 0px; /* Position it slightly below the text */
+    }
+}
 @media(max-width:347px){
     .nav-header{
         display: flex;
